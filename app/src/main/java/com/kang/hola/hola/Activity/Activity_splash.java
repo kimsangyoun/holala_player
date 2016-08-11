@@ -1,12 +1,12 @@
-package com.kang.hola.hola;
+package com.kang.hola.hola.Activity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.kang.hola.hola.Activity.MainActivity;
+import com.kang.hola.hola.R;
 
-public class SplashActivity extends Activity {
+public class Activity_splash extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class SplashActivity extends Activity {
             public void run(){
                 try{
                     sleep(1500);
-                    Intent startMain = new Intent(getApplicationContext(), MainActivity.class);
+                    Intent startMain = new Intent(getApplicationContext(), Activity_main.class);
                     startActivity(startMain);
                     finish();
                 }catch (InterruptedException e){
